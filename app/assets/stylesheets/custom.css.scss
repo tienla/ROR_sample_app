@@ -17,18 +17,33 @@ body {
 	border-radius: 10px 10px 10px 10px;
 }
 
-#logo:active{
-	text-decoration: none;
+#logo:link {
+    background-color:transparent;
+    text-decoration:none;
+}
+#logo:visited {
+    background-color:transparent;
+    text-decoration:none;
+}
+#logo:hover {
+    background-color:transparent;
+    text-decoration:none;
+}
+#logo:active {
+	background-color:transparent;
+    text-decoration:none;
 }
 
 #logo{
+	color:grey;
 	font-size: 30px;
 }
 
 #footer {
+	background: #222;
+	color:white;
 	width:100%;
 	height:auto;
-	position:absolute;
 	bottom:0;
 	left:0;
 	margin-right: 20px;

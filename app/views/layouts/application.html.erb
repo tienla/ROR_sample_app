@@ -9,10 +9,18 @@
 </head>
 <body>
 	<%= render :partial => 'layouts/header' %>
-	<div class="a" style:"padding-top:200px">
+		<br/>
+		<br/>
+		<br/>
+	<div class="container">
+		<% flash.each do |message_type, message| %>
+			<div class="alert alert-<%= message_type%>"><%= message %></div>
+		<% end %>	
 		<%= yield %>
-		<%= render 'layouts/footer' %>
+		<br>
 	</div>
+
+	<%= render 'layouts/footer' %>
 
 </body>
 </html>
